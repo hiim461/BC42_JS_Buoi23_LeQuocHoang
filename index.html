@@ -1,21 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+
+<head>
+    <title>BT JS B2-3</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h3>
+            Bài 1: Viết chương trình tính lương nhân viên
+        </h3>
+        <div class="form-group w-50">
+            <p>Tiền lương 1h:</p>
+            <input class="form-control" disabled value="100000" id="tienLuong1h-B1"> <br>
+            <p>Số ngày làm việc</p>
+            <input class="form-control" id="soNgayLam-B1"> <br>
+            <button class="btn btn-success" id="btn-B1">Tính tiền lương</button> <br>
+            <p class="alert alert-success mt-3" id="ketQua-B1"></p>
+        </div>
+        <hr>
+        <h3>
+            Bài 2: Viết chương trình nhập vào 5 số thực, tính trung bình cộng của 5 số trên và nhập màn hình.
+        </h3>
+        <div class="form-group w-50">
+            <p>Nhập vào 5 số thực</p>
+            <div class="form-group">
+                <p>Số thứ 1:</p>
+                <input class="form-control" id="soThuc1-B2">
+            </div>
+            <div class="form-group">
+                <p>Số thứ 2:</p>
+                <input class="form-control" id="soThuc2-B2">
+            </div>
+            <div class="form-group">
+                <p>Số thứ 3:</p>
+                <input class="form-control" id="soThuc3-B2">
+            </div>
+            <div class="form-group">
+                <p>Số thứ 4:</p>
+                <input class="form-control" id="soThuc4-B2">
+            </div>
+            <div class="form-group">
+                <p>Số thứ 5:</p>
+                <input class="form-control" id="soThuc5-B2">
+            </div>
+            <button class="btn btn-success" id="btn-B2">Tính trung bình cộng</button> <br>
+            <p class="alert mt-3 alert-success" id="ketQua-B2"></p>
+
+        </div>
+        <hr>
+        <h3>Bài 3: Quy đổi tiền</h3>
+        <div class="form-group w-50">
+            <div class="form-group">
+                <p>Giá USD:</p>
+                <div class="input-group">
+                    <input class="form-control" id="tyGia-B3" value="23500" disabled>
+                    <div class="input-group-append">
+                        <span class="input-group-text">VND</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Số tiền USD bạn muốn đổi:</p>
+                <div class="input-group">
+                    <input class="form-control" id="soTienUsd-B3">
+                    <div class="input-group-append">
+                        <span class="input-group-text">$</span>
+                    </div>
+                </div> <br>
+                <button class="btn btn-success" id="btn-B3">Đổi sang tiền Việt</button>
+            </div>
+            <p class="alert alert-success mt-3" id="ketQua-B3"></p>
+           
+
+
+        </div>
+        <hr>
+        <h3>Bài 4: Tính chu vi, diện tích hình chữ nhật</h3>
+        <div class="form-group w-50">
+            <div class="form-group">
+                <p>Mời bạn nhập vào chiều dài của hình chữ nhật:</p>
+                <input class="form-control" id="chieuDai-B4">
+            </div>
+            <div class="form-group">
+                <p>Mời bạn nhập vào chiều rộng của hình chữ nhật:</p>
+                <input class="form-control" id="chieuRong-B4">
+            </div>
+            <button class="btn btn-success" id="btn-B4">Tính diện tích và chu vi</button>
+            <p class="alert alert-success mt-3" id="ketQua1-B4"></p>
+            <p class="alert alert-success" id="ketQua2-B4"></p>
+        </div>
+        <hr>
+        <h3>Bài 5: Tính tổng 2 ký số của số có 2 chữ số</h3>
+        <div class="form-group w-50">
+            <p>Nhập vào số tự nhiên có 2 chữ số:</p>
+            <input class="form-control" id="so2KySo-B5"> <br>
+            <button class="btn btn-success" id="btn-B5">Tính tổng 2 chữ số</button>
+            <p class="alert alert-success mt-3" id="ketQua-B5"></p>
+
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="./index.js"></script>r
-  </body>
+</body>
+
 </html>
